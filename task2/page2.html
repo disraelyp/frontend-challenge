@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2 - Command and Conquer: Manage, Search, and Filter</title>
+    <link rel="stylesheet" type="text/css" href="src/css/globals.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <h2 class="logo">MINNEK</h2>
+      <h2 class="url"><a href="./page1.html">Page 1</a></h2>
+    </div>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search dog breeds" />
+      <button id="search-btn" type="submit">Search</button>
+      <button id="sort-btn">Sort by Breed (A-Z)</button>
+    </form>
+
+    <div class="data">
+      <div id="search-history-section">
+        <h3>Search History:</h3>
+      </div>
+
+      <div class="table-container">
+        <table id="dog-table">
+          <thead>
+            <tr>
+              <th>Breed</th>
+              <th>Sub-Breeds</th>
+            </tr>
+          </thead>
+          <tbody id="dog-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </body>
+  <script src="src/js/table.js"></script>
+</html>

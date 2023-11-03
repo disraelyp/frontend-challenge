@@ -124,3 +124,65 @@ body {
     visibility: visible;
     font-size: 24px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #search-input {
+    margin-bottom: 10px;
+    width: 20%;
+    height: 20px;
+    min-width: 150px;
+  }
+  
+  #sort-btn {
+    margin-top: 10px;
+  }
+
+#search-history-section {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 25px;
+} 
+
+#search-history-section p, h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#search-history-section h3 {
+    width: 100%;
+    margin: 0;
+}
+
+.data {
+    margin-top: 10px;
+    padding: 0 25px;
+}
+
+#search-form {
+    padding: 0 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+#search-form button {
+    color: white;
+    background: #282A3A;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}

@@ -1,0 +1,126 @@
+body {
+    background-color: #F0F0F0;
+    margin: 0;
+    font-family: Poppins, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.dog-card-image-container p {
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    width: 200px;
+    height: 205px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(40, 42, 58, 0.253)
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282A3A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #282A3A;
+}
+
+.nav-bar {
+    background-color: #282A3A;
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.url a {
+    color: white;
+    margin-right: 30px;
+}
+
+.nav-bar h2 {
+    padding-left: 100px;
+}
+
+.dogs-title {
+    margin-left: 25px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: #282A3A;
+    font-weight: 800;
+}
+
+.dogs-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: calc(100% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dog-card {
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    border: 5px solid #282A3A;
+    background: #282A3A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.dog-card-size {
+    width: 100%;
+    height: 100%;
+}
+
+.dog-card-name {
+    background-color: #282A3A;
+    text-align: center;
+    width: 100%;
+}
+
+.dog-card-name p {
+    margin: 5px;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.dog-card-description {
+    padding: 10px;
+}
+
+.dog-card-description h1 {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.dog-card-image {
+    border-radius: 8px 8px 0 0;
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.dog-card-image-container:hover img {
+    opacity: 0.2;
+}
+
+.dog-card-sub-text {
+    visibility: hidden;
+}
+
+.dog-card-image-container:hover p {
+    visibility: visible;
+    font-size: 24px;
+}

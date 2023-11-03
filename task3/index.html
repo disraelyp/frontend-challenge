@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TASK3</title>
+    <link rel="stylesheet" href="src/css/globals.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="action-section">
+        <div class="button-section">
+          <button class="start-button">New Game</button>
+          <button disabled class="reset-button">Reset Board</button>
+        </div>
+        <div class="indicator-section">
+          <div id="clock">Time: 0</div>
+          <div id="movement"></div>
+        </div>
+      </div>
+      <div id="board"></div>
+      <div class="difficulty-section">
+        <h2>Difficulty</h2>
+        <select class="grid-select">
+          <option value="6">Easy</option>
+          <option selected value="8">Normal</option>
+          <option value="10">Hard</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./src/js/core.js"></script>
+</html>

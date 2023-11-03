@@ -1,0 +1,114 @@
+html {
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+body {
+    height: 100vh;
+    background: rgb(120,7,234);
+    background: linear-gradient(320deg, rgba(120,7,234,1) 0%, rgba(250,120,1,1) 50%, rgba(252,195,0,1) 100%);
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-section {
+    width: 550px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.button-section {
+    margin-right: 20px;
+}
+
+.button-section button {
+    width: 100%;
+}
+
+.start-button {
+    margin-bottom: 5px;
+}
+
+.difficulty-section {
+    width: 550px;
+    display: flex;
+}
+
+.difficulty-section h2 {
+    margin: 0px;
+    margin-right: 25px;
+}
+
+.difficulty-section select {
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#board {
+    padding: 25px;
+    display: flex;
+    background: rgb(120,7,234);
+    background: linear-gradient(145deg, rgba(120,7,234,1) 0%, rgba(250,120,1,1) 50%, rgba(252,195,0,1) 100%);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 5px;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: #282A3A;
+    content-visibility: hidden;
+}
+
+button {
+    background: #282A3A;
+    color: white;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background: #282A3A;
+    color: white;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+}
+
+button:disabled,
+button[disabled] {
+    background: #595d7c;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+    background: white;
+    content-visibility: visible;
+}
+
+#movement {
+    font-size: 24px;
+}
